@@ -10,18 +10,20 @@ import java.util.Scanner;
  *
  * @author user
  */
-public class Ej_1 {
+public class Ej_3 {
     public static void main(String[] args){
-        System.out.println("Ingrese un número entero");
-        Scanner read= new Scanner(System.in);
-        int num = read.nextInt();
-       
-        if ( 0 == (num % 2) ){
-            System.out.println("El número " + num + " es par");            
+        Scanner read=new Scanner(System.in);
+        System.out.println("Ingrese una frase");
+        String frase=read.nextLine();
+        
+        if(frase.length()==8){
+            System.out.println("Correcto");
         }
+        
         else{
-            System.out.println("El número " + num + " es impar");
-        }
+                System.out.println("Incorrecto");
+            }
+        
     }
     
 }
